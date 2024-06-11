@@ -1,0 +1,36 @@
+.navlogo{
+    filter: invert(1);
+}
+.navmain{
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+}
+
+.color{
+    color: gray !important;
+}
+
+.activelink{
+    color: #C26947 !important;   
+    
+}
+.navbarnav{
+    font-family: 
+    "Helvetica Neue"
+    Helvetica
+    Arial
+    sans-serif;
+    font-weight: bold;
+
+}
+.navitem{
+    padding: 0 10px;
+}
+
+@media (max-width : 340px) {
+    .navlogo{
+        width: 65%;
+        height: 65%;
+    }
+}
