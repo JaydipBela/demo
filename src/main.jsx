@@ -2,15 +2,16 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
+import { HashRouter, Route, RouterProvider, createBrowserRouter, createHashRouter, createRoutesFromElements } from 'react-router-dom'
 import Home from './componet/Home.jsx'
 import Aboutus from './componet/About-us.jsx'
 import Menu from './componet/Menu.jsx'
 import Contactus from './componet/Contact-us.jsx'
 import Blog from './componet/Blog.jsx'
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
+  
     <Route path='/' element={<App />}>
 
       <Route path="" element={<Home />} />
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
       <Route path="blog" element={<Blog />} />
 
     </Route>
+
   )
 )
 
