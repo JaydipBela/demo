@@ -9,9 +9,9 @@ import Menu from './componet/Menu.jsx'
 import Contactus from './componet/Contact-us.jsx'
 import Blog from './componet/Blog.jsx'
 
-const router = createHashRouter(
+const router = createBrowserRouter(
   createRoutesFromElements(
-  
+
     <Route path='/' element={<App />}>
 
       <Route path="" element={<Home />} />
@@ -57,6 +57,10 @@ const router = createHashRouter(
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <HashRouter>
     <RouterProvider router={router} />
-  </React.StrictMode>,
+  </HashRouter>
+  </React.StrictMode >,
 )
+
+
