@@ -2,7 +2,7 @@
 
 .firstsection{
     height: 100vh;
-    background: url(img/bg.jpg) center center/cover;
+    background: url(/public/img/bg.jpg) center center/cover;
 }
 
 .hero{

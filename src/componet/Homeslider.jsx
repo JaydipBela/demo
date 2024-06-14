@@ -6,7 +6,7 @@ import { AiOutlineDoubleRight ,AiOutlineDoubleLeft} from "react-icons/ai";
 const images = [
   {
     id: 1, 
-    profilephoto: "/img/profile1.jpg",
+    profilephoto: "img/profile1.jpg",
     name: "Maliek Doe",
     title: "Young Business",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
@@ -14,7 +14,7 @@ const images = [
   },
   {
     id: 2,
-    profilephoto: "/img/profile2.jpg",
+    profilephoto: "img/profile2.jpg",
     name: "Jono Kopler",
     title: "Designation",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
@@ -22,7 +22,7 @@ const images = [
   },
   {
     id: 3,
-    profilephoto: "/img/profile3.jpg",
+    profilephoto: "img/profile3.jpg",
     name: "Wong Sae We",
     title: "Accounting",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
