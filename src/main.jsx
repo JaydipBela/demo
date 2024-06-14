@@ -12,13 +12,13 @@ import Blog from './componet/Blog.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
 
-    <Route path='/demo/' element={<App />}>
+    <Route path='/' element={<App />}>
 
-      <Route path="/demo" element={<Home />} />
-      <Route path="/demo/about" element={<Aboutus />} />
-      <Route path="/demo/menu" element={<Menu />} />
-      <Route path="/demo/contact" element={<Contactus />} />
-      <Route path="/demo/blog" element={<Blog />} />
+      <Route path="" element={<Home />} />
+      <Route path="about" element={<Aboutus />} />
+      <Route path="menu" element={<Menu />} />
+      <Route path="contact" element={<Contactus />} />
+      <Route path="blog" element={<Blog />} />
 
     </Route>
 
