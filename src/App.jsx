@@ -31,7 +31,7 @@ function App() {
 
   return (
     <>
-    <BrowserRouter basename='/demo'>
+    <BrowserRouter basename='/demo/'>
       <Navbar/>
       <Routes>
       <Route path='/' element={<Home/>}/>
