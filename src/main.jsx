@@ -9,21 +9,21 @@ import Menu from './componet/Menu.jsx'
 import Contactus from './componet/Contact-us.jsx'
 import Blog from './componet/Blog.jsx'
 
-const router = createBrowserRouter(
+/*const router = createBrowserRouter(
   createRoutesFromElements(
 
-    <Route path='/demo/' element={<App />}>
+    <Route path='/' element={<App />}>
 
-      <Route path="/demo" element={<Home />} />
-      <Route path="/demo/about" element={<Aboutus />} />
-      <Route path="/demo/menu" element={<Menu />} />
-      <Route path="/demo/contact" element={<Contactus />} />
-      <Route path="/demo/blog" element={<Blog />} />
+      <Route path="" element={<Home />} />
+      <Route path="about" element={<Aboutus />} />
+      <Route path="menu" element={<Menu />} />
+      <Route path="contact" element={<Contactus />} />
+      <Route path="blog" element={<Blog />} />
 
     </Route>
 
   )
-)
+)*/
 
 // const router = createBrowserRouter([
 //   {
@@ -57,7 +57,8 @@ const router = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <App/>
+    {/* <RouterProvider router={router} /> */}
   </React.StrictMode >,
 )
 

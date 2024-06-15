@@ -9,22 +9,40 @@ import Contactus from './componet/Contact-us'
 import { Outlet } from 'react-router-dom'
 import Navbar from './componet/Navbar'
 import Footer from './componet/Footer'
+import { BrowserRouter,Route,Routes } from 'react-router-dom'
 
 
 function App() {
   const [count, setCount] = useState(0);
  
 
+  // return (
+  //   <>
+  //   <Navbar/>
+  //   <Outlet/>
+  //    {/* <Home></Home>
+  //    <Aboutus></Aboutus>
+  //    <Menu></Menu>
+  //    <Contactus></Contactus>
+  //    <Blog></Blog> */}
+  //    <Footer/>
+  //   </>
+  // )
+
   return (
     <>
-    <Navbar/>
-    <Outlet/>
-     {/* <Home></Home>
-     <Aboutus></Aboutus>
-     <Menu></Menu>
-     <Contactus></Contactus>
-     <Blog></Blog> */}
-     <Footer/>
+    <BrowserRouter basename='/demo1'>
+      <Navbar/>
+      <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/about-us' element={<Aboutus/>}/>
+      <Route path='/menu' element={<Menu/>}/>
+      <Route path='/contact-us' element={<Contactus/>}/>
+      <Route path='/blog' element={<Blog/>}/>
+      </Routes>
+      <Footer/>
+    </BrowserRouter>
+    
     </>
   )
 }
